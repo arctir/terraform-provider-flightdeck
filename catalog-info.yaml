@@ -1,0 +1,17 @@
+# Copyright (c) Arctir, Inc.
+# SPDX-License-Identifier: Apache-2.0
+
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: terraform-provider-flightdeck
+  description: A Terraform provider for Flightdeck
+spec:
+  type: library 
+  lifecycle: production
+  owner: arctir-core
+  system: arctir-runtime
+  dependsOn:
+    - api:default/arctir-api
+  consumesApis:
+    - arctir-api

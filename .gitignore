@@ -1,0 +1,9 @@
+apispec.bundled.json
+spec.json
+go.work*
+terraform-provider-flightdeck_*
+*tfstate*
+__debug*
+.terraform*
+*.unused
+*.tfvars
