@@ -19,7 +19,7 @@ Represents a Tenant resource.
 
 - `display_name` (String) The display name of the Tenant.
 - `name` (String) The name of the Tenant.
-- `organization_id` (String)
+- `organization_id` (String) The ID of the Flightdeck Organization resource.
 
 ### Read-Only
 

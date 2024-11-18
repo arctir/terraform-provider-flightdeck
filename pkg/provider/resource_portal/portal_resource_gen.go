@@ -55,7 +55,9 @@ func PortalResourceSchema(ctx context.Context) schema.Schema {
 				MarkdownDescription: "The name of the Portal.",
 			},
 			"organization_id": schema.StringAttribute{
-				Required: true,
+				Required:            true,
+				Description:         "The ID of the Flightdeck Organization resource.",
+				MarkdownDescription: "The ID of the Flightdeck Organization resource.",
 			},
 			"organization_name": schema.StringAttribute{
 				Required:            true,

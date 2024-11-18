@@ -20,7 +20,7 @@ Represents a Portal resource.
 - `alternate_domains` (List of String) A list of alternate domains for the Portal.
 - `domain` (String) The primary domain of the Portal.
 - `name` (String) The name of the Portal.
-- `organization_id` (String)
+- `organization_id` (String) The ID of the Flightdeck Organization resource.
 - `organization_name` (String) The name of the Organization operating this Portal.
 - `tenant_name` (String) The name of the Tenant providing user idenity to this Portal.
 - `title` (String) The HTML title of the Portal.

@@ -17,5 +17,5 @@ description: |-
 
 ### Optional
 
-- `api_endpoint` (String)
-- `config_path` (String)
+- `api_endpoint` (String) The endpoint for the flightdeck API
+- `config_path` (String) The path to the flightdeck config file

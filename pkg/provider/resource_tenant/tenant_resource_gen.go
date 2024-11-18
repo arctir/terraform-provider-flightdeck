@@ -43,7 +43,9 @@ func TenantResourceSchema(ctx context.Context) schema.Schema {
 				MarkdownDescription: "The name of the Tenant.",
 			},
 			"organization_id": schema.StringAttribute{
-				Required: true,
+				Required:            true,
+				Description:         "The ID of the Flightdeck Organization resource.",
+				MarkdownDescription: "The ID of the Flightdeck Organization resource.",
 			},
 		},
 		Description: "Represents a Tenant resource.",

@@ -27,7 +27,6 @@ func New(apiEndpoint, configPath types.String) func() provider.Provider {
 		return &flightdeckProvider{
 			ApiEndpoint: apiEndpoint,
 			ConfigPath:  configPath,
-			
 		}
 	}
 }
@@ -41,10 +40,12 @@ func (p *flightdeckProvider) Schema(ctx context.Context, req provider.SchemaRequ
 	resp.Schema = schema.Schema{
 		Attributes: map[string]schema.Attribute{
 			"api_endpoint": schema.StringAttribute{
-				Optional: true,
+				Optional:    true,
+				Description: "The endpoint for the flightdeck API",
 			},
 			"config_path": schema.StringAttribute{
-				Optional: true,
+				Optional:    true,
+				Description: "The path to the flightdeck config file",
 			},
 		},
 	}

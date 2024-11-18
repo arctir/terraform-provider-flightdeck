@@ -1,8 +1,6 @@
 # Copyright (c) Arctir, Inc.
 # SPDX-License-Identifier: Apache-2.0
 
-
-
 import json
 import sys
 import humps
@@ -526,7 +524,7 @@ resource_mappings = [
         "tenant",
         "TenantInput",
         "Tenant",
-        extra_attributes=[ResourceStringAttribute("organization_id", True)],
+        extra_attributes=[ResourceStringAttribute("organization_id", True, description="The ID of the Flightdeck Organization resource.",)],
     ),
     ResourceMapping(
         "identity_provider",
@@ -566,7 +564,8 @@ resource_mappings = [
         "portal",
         "PortalInput",
         "Portal",
-        extra_attributes=[ResourceStringAttribute("organization_id", True)],
+        extra_attributes=[
+            ResourceStringAttribute("organization_id", True, description="The ID of the Flightdeck Organization resource.",)],
         read_ignore_fields=[
             ".portal.version",
         ],
